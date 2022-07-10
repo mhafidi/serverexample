@@ -1,0 +1,9 @@
+[Unit]
+Description=Java Server
+
+[Service]
+Type=simple
+ExecStart=/example/server.bash
+
+[Install]
+WantedBy=multi-user.target
