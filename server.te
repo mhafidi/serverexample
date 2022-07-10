@@ -1,0 +1,6 @@
+policy_module(server, 1.0)
+
+type server_t;
+type server_exec_t;
+domain_entry_file(myapp_t,myapp_file_exec_t)
+init_daemon_domain(server_t, server_exec_t)
