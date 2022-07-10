@@ -12,11 +12,13 @@
         $systemctl restart  javaserver.service
         $systemctl status  javaserver.service
         $ systemctl status  javaserver.service
+systemctl status javaserver.service
 ● javaserver.service - Java Server
-   Loaded: loaded (/etc/systemd/system/javaserver.service; disabled; vendor preset: disabled)
-   Active: active (running) since Thu 2022-07-07 13:26:21 EDT; 2s ago
- Main PID: 12624 (java)
-    Tasks: 18 (limit: 275204)
-   Memory: 16.0M
+   Loaded: loaded (/usr/lib/systemd/system/javaserver.service; disabled; vendor preset: disabled)
+   Active: active (running) since Sun 2022-07-10 13:46:53 EDT; 4s ago
+ Main PID: 4243 (server.bash)
    CGroup: /system.slice/javaserver.service
-           └─12624 /usr/bin/java -jar /example/example/server.jar 44
+           ├─4243 /bin/bash /example/server.bash
+           └─4253 sleep 1
+
+
