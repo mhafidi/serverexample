@@ -19,4 +19,4 @@
     Tasks: 18 (limit: 275204)
    Memory: 16.0M
    CGroup: /system.slice/javaserver.service
-           └─12624 /usr/bin/java -jar /opt/example/example-1/server.jar 44
+           └─12624 /usr/bin/java -jar /example/example/server.jar 44
